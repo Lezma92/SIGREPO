@@ -1,0 +1,58 @@
+
+
+<div class="modal fade" id="exampleModalLabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+     <div class="modal-header" style="background: #191B32;" >
+      <h5 class="modal-title text-white" id="exampleModalLabel">Formulario de registro</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" style="background: linear-gradient(#191B32,#2C3278);">
+      <form name="form-registro" method="POST">
+        <div class="form-row">
+          <div class="form-group  col-md-6 text-white">
+            <label for="text-matricula">Matricula:</label>
+            <input type="number" class="form-control" name="matricula" id="text-matricula" placeholder="Usuario de acceso"  required>
+          </div>
+          <div class="form-group col-md-6  text-white">
+            <label for="inputState">Grado estudio:</label>
+            <select id="inputState" class="form-control" required>
+              <option selected disabled><--seleccionar--></option>
+              <option value="TSU">Técnico</option>
+              <option value="ING">Ingeniería</option>
+
+            </select>
+          </div>
+        </div>
+
+
+        <div class="form-group text-white">
+          <label for="text-nombre">Nombre(s):</label>
+          <input type="text" name="nombre" class="form-control txt-entrada" id="text-nombre"  required>
+        </div>
+        <div class="form-group text-white">
+          <label for="text-apellidos">Apellidos:</label>
+          <input type="text" class="form-control txt-entrada" name="apellidos" id="text-apellidos"  required>
+        </div>
+        <div class="form-row text-white">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Grupo: </label>
+            <input type="text" class="form-control" id="inputCity" name="grupo"  style="text-transform:uppercase;" minlength="3" maxlength="4" required>
+          </div>
+          <div class="form-group text-white">
+            <label for="text-pswrd">Contraseña:</label>
+            <input type="password" class="form-control" name="pswrd" id="text-pswrd"  required>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <input class="btn btn-primary btn-sm" type="submit" name="registrarAlumno" value="Registrar">
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer" style="background: #191B32;">
+    </div>
+  </div>
+</div>
+</div>
